@@ -1,0 +1,50 @@
+.ui-stack {
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* Direction */
+.ui-stack--vertical {
+  flex-direction: column;
+}
+
+.ui-stack--horizontal {
+  flex-direction: row;
+}
+
+/* Align */
+.ui-stack--align-start    { align-items: flex-start; }
+.ui-stack--align-center   { align-items: center; }
+.ui-stack--align-end      { align-items: flex-end; }
+.ui-stack--align-stretch  { align-items: stretch; }
+.ui-stack--align-baseline { align-items: baseline; }
+
+/* Justify */
+.ui-stack--justify-start   { justify-content: flex-start; }
+.ui-stack--justify-center  { justify-content: center; }
+.ui-stack--justify-end     { justify-content: flex-end; }
+.ui-stack--justify-between { justify-content: space-between; }
+.ui-stack--justify-around  { justify-content: space-around; }
+.ui-stack--justify-evenly  { justify-content: space-evenly; }
+
+.ui-stack--wrap {
+  flex-wrap: wrap;
+}
+
+/* Built-in divider element */
+.ui-stack-divider {
+  align-self: stretch;
+  background-color: var(--ui-color-border);
+  border: none;
+  margin: 0;
+}
+
+.ui-stack--vertical > .ui-stack-divider {
+  height: 1px;
+  width: 100%;
+}
+
+.ui-stack--horizontal > .ui-stack-divider {
+  width: 1px;
+  height: 100%;
+}

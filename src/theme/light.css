@@ -1,0 +1,62 @@
+/**
+ * Atelier UI — Light Theme
+ * Crisp, warm-tinted modern paper neutral aesthetic with high contrast
+ */
+:root, [data-theme="light"] {
+  --ui-color-background: #fafaf9;
+  --ui-color-surface: #ffffff;
+  --ui-color-surface-hover: #f5f5f4;
+  --ui-color-surface-raised: #ffffff;
+  --ui-color-surface-inset: #f5f5f4;
+
+  --ui-color-foreground: #1c1917;
+  --ui-color-foreground-muted: #78716c;
+  --ui-color-foreground-subtle: #a8a29e;
+
+  --ui-color-border: #e7e5e4;
+  --ui-color-border-hover: #d6d3d1;
+  --ui-color-border-subtle: #f0eeed;
+  --ui-color-border-strong: #a8a29e;
+
+  /* Brand / Primary */
+  --ui-color-primary: #18181b;
+  --ui-color-primary-hover: #27272a;
+  --ui-color-primary-active: #09090b;
+  --ui-color-primary-fg: #ffffff;
+
+  /* Secondary */
+  --ui-color-secondary: #f4f4f5;
+  --ui-color-secondary-hover: #e4e4e7;
+  --ui-color-secondary-active: #d4d4d8;
+  --ui-color-secondary-fg: #18181b;
+
+  /* Accent */
+  --ui-color-accent: #2563eb;
+  --ui-color-accent-hover: #1d4ed8;
+  --ui-color-accent-fg: #ffffff;
+  --ui-color-accent-subtle: #eff6ff;
+
+  /* Status Colors */
+  --ui-color-success: #16a34a;
+  --ui-color-success-hover: #15803d;
+  --ui-color-success-fg: #ffffff;
+  --ui-color-success-subtle: #f0fdf4;
+  --ui-color-success-border: #bbf7d0;
+
+  --ui-color-warning: #d97706;
+  --ui-color-warning-hover: #b45309;
+  --ui-color-warning-fg: #ffffff;
+  --ui-color-warning-subtle: #fffbeb;
+  --ui-color-warning-border: #fde68a;
+
+  --ui-color-danger: #dc2626;
+  --ui-color-danger-hover: #b91c1c;
+  --ui-color-danger-active: #991b1b;
+  --ui-color-danger-fg: #ffffff;
+  --ui-color-danger-subtle: #fef2f2;
+  --ui-color-danger-border: #fecaca;
+
+  /* Focus Ring */
+  --ui-color-focus-ring: rgba(37, 99, 235, 0.35);
+  --ui-color-focus-border: #2563eb;
+}

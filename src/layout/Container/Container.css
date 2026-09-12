@@ -1,0 +1,16 @@
+.ui-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ui-container--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container max-widths */
+.ui-container--size-sm   { max-width: 640px; }
+.ui-container--size-md   { max-width: 768px; }
+.ui-container--size-lg   { max-width: 1024px; }
+.ui-container--size-xl   { max-width: 1280px; }
+.ui-container--size-full { max-width: 100%; }

@@ -1,0 +1,101 @@
+.ui-checkbox-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--ui-space-xs);
+  cursor: pointer;
+  user-select: none;
+  font-family: var(--ui-font-sans);
+  position: relative;
+}
+
+.ui-checkbox-wrapper--disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Hidden native input */
+.ui-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* Visual box */
+.ui-checkbox-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--ui-color-border-strong);
+  background-color: var(--ui-color-surface);
+  border-radius: var(--ui-radius-sm);
+  color: var(--ui-color-primary-fg);
+  transition:
+    background-color var(--ui-transition-fast),
+    border-color var(--ui-transition-fast),
+    box-shadow var(--ui-transition-fast);
+}
+
+/* Sizes */
+.ui-checkbox-box--sm {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.ui-checkbox-box--md {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+/* Checked / Indeterminate state */
+.ui-checkbox-box--checked,
+.ui-checkbox-box--indeterminate {
+  background-color: var(--ui-color-primary);
+  border-color: var(--ui-color-primary);
+}
+
+/* Focus */
+.ui-checkbox-input:focus-visible + .ui-checkbox-box {
+  outline: var(--ui-focus-ring-width) solid var(--ui-color-focus-ring);
+  outline-offset: var(--ui-focus-ring-offset);
+}
+
+/* Error */
+.ui-checkbox-box--error {
+  border-color: var(--ui-color-danger);
+}
+
+/* Icon svg */
+.ui-checkbox-icon {
+  width: 12px;
+  height: 12px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Content labels */
+.ui-checkbox-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  line-height: 1.4;
+}
+
+.ui-checkbox-label {
+  font-size: var(--ui-font-size-sm);
+  font-weight: var(--ui-font-weight-medium);
+  color: var(--ui-color-foreground);
+}
+
+.ui-checkbox-desc {
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-foreground-muted);
+}

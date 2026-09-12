@@ -1,0 +1,115 @@
+.ui-select-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--ui-space-2xs);
+  box-sizing: border-box;
+  font-family: var(--ui-font-sans);
+}
+
+.ui-select-wrapper--full-width {
+  width: 100%;
+}
+
+/* Label */
+.ui-select-label {
+  font-size: var(--ui-font-size-xs);
+  font-weight: var(--ui-font-weight-medium);
+  color: var(--ui-color-foreground);
+  user-select: none;
+}
+
+.ui-select-label--disabled {
+  color: var(--ui-color-foreground-muted);
+}
+
+/* Select Container */
+.ui-select-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Native select styled cleanly */
+.ui-select {
+  width: 100%;
+  font-family: var(--ui-font-sans);
+  color: var(--ui-color-foreground);
+  background-color: var(--ui-color-surface);
+  border: 1px solid var(--ui-color-border);
+  border-radius: var(--ui-radius-md);
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  cursor: pointer;
+  outline: none;
+  transition:
+    border-color var(--ui-transition-fast),
+    box-shadow var(--ui-transition-fast),
+    background-color var(--ui-transition-fast);
+}
+
+.ui-select:focus {
+  border-color: var(--ui-color-focus-border);
+  box-shadow: 0 0 0 var(--ui-focus-ring-width) var(--ui-color-focus-ring);
+}
+
+/* Sizes */
+.ui-select--size-sm {
+  height: 32px;
+  padding-left: 10px;
+  font-size: var(--ui-font-size-xs);
+  border-radius: var(--ui-radius-sm);
+}
+
+.ui-select--size-md {
+  height: 40px;
+  padding-left: 12px;
+  font-size: var(--ui-font-size-sm);
+  border-radius: var(--ui-radius-md);
+}
+
+.ui-select--size-lg {
+  height: 48px;
+  padding-left: 16px;
+  font-size: var(--ui-font-size-md);
+  border-radius: var(--ui-radius-md);
+}
+
+/* States */
+.ui-select:disabled {
+  background-color: var(--ui-color-surface-inset);
+  color: var(--ui-color-foreground-muted);
+  border-color: var(--ui-color-border-subtle);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.ui-select--error,
+.ui-select--error:focus {
+  border-color: var(--ui-color-danger);
+  box-shadow: 0 0 0 var(--ui-focus-ring-width) rgba(220, 38, 38, 0.2);
+}
+
+/* Chevron arrow */
+.ui-select-icon {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  color: var(--ui-color-foreground-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Helper / Error */
+.ui-select-helper {
+  font-size: var(--ui-font-size-xs);
+  color: var(--ui-color-foreground-muted);
+  line-height: 1.4;
+}
+
+.ui-select-helper--error {
+  color: var(--ui-color-danger);
+  font-weight: var(--ui-font-weight-medium);
+}

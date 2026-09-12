@@ -1,0 +1,19 @@
+# Ignorer le dossier projetcomplet (gardé pour le développement local uniquement)
+projetcomplet/
+
+# Ignorer node_modules (standard)
+node_modules/
+
+# Ignorer les fichiers de build
+dist/
+*.log
+
+# Ignorer les fichiers de configuration locale
+.env.local
+.env.*.local
+
+# Ignorer les fichiers de configuration Vite
+.vite/
+
+# Ignorer les fichiers du framework de démo
+demo-app/.env.local

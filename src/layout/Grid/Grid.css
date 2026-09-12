@@ -1,0 +1,18 @@
+.ui-grid {
+  display: grid;
+  box-sizing: border-box;
+}
+
+/* Align */
+.ui-grid--align-start   { align-items: start; }
+.ui-grid--align-center  { align-items: center; }
+.ui-grid--align-end     { align-items: end; }
+.ui-grid--align-stretch { align-items: stretch; }
+
+/* Justify */
+.ui-grid--justify-start   { justify-content: start; }
+.ui-grid--justify-center  { justify-content: center; }
+.ui-grid--justify-end     { justify-content: end; }
+.ui-grid--justify-between { justify-content: space-between; }
+.ui-grid--justify-around  { justify-content: space-around; }
+.ui-grid--justify-evenly  { justify-content: space-evenly; }

@@ -1,0 +1,28 @@
+@import "./reset.css";
+@import "../theme/tokens.css";
+@import "../theme/light.css";
+@import "../theme/dark.css";
+
+/* Base Body Application */
+html, body {
+  font-family: var(--ui-font-sans);
+  font-size: var(--ui-font-size-md);
+  line-height: var(--ui-line-height-normal);
+  color: var(--ui-color-foreground);
+  background-color: var(--ui-color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--ui-transition-base), color var(--ui-transition-base);
+}
+
+::selection {
+  background-color: var(--ui-color-primary);
+  color: var(--ui-color-primary-fg);
+}
+
+/* Accessibility Focus Visible standard fallback */
+:focus-visible {
+  outline: var(--ui-focus-ring-width) solid var(--ui-color-focus-ring);
+  outline-offset: var(--ui-focus-ring-offset);
+}

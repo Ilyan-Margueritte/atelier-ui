@@ -1,0 +1,50 @@
+.ui-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--ui-font-sans);
+  font-weight: var(--ui-font-weight-medium);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color var(--ui-transition-fast), text-decoration-color var(--ui-transition-fast);
+  border-radius: var(--ui-radius-sm);
+}
+
+.ui-link:focus-visible {
+  outline: var(--ui-focus-ring-width) solid var(--ui-color-focus-ring);
+  outline-offset: var(--ui-focus-ring-offset);
+}
+
+/* Sizes */
+.ui-link--size-sm { font-size: var(--ui-font-size-xs); }
+.ui-link--size-md { font-size: var(--ui-font-size-sm); }
+.ui-link--size-lg { font-size: var(--ui-font-size-md); }
+
+/* Variants */
+.ui-link--variant-default {
+  color: var(--ui-color-accent);
+}
+
+.ui-link--variant-default:hover {
+  color: var(--ui-color-accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ui-link--variant-subtle {
+  color: var(--ui-color-foreground-muted);
+}
+
+.ui-link--variant-subtle:hover {
+  color: var(--ui-color-foreground);
+}
+
+.ui-link--variant-underline {
+  color: var(--ui-color-foreground);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ui-link--variant-underline:hover {
+  color: var(--ui-color-accent);
+}

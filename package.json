@@ -1,0 +1,36 @@
+{
+  "name": "atelier-ui",
+  "version": "1.0.0",
+  "description": "A modern, accessible React + TypeScript UI framework built with pure CSS design tokens.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./src/index.ts",
+  "style": "./dist/index.css",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/index.css",
+    "./tokens": "./src/theme/tokens.css"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --format=esm --packages=external --outfile=dist/index.mjs && esbuild src/index.ts --bundle --format=cjs --packages=external --outfile=dist/index.cjs",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "design-system",
+    "components",
+    "css-variables",
+    "typescript"
+  ],
+  "author": "Atelier UI Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  }
+}
