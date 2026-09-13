@@ -8,7 +8,7 @@
 
 Atelier UI is a **React + TypeScript UI framework** with pure CSS design tokens. No Tailwind, no Bootstrap — just components and CSS variables.
 
-- **Package:** `atelier-ui`
+- **Package:** `atelier-ui-react`
 - **Peer dependencies:** `react ^18.0.0 || ^19.0.0`, `react-dom ^18.0.0 || ^19.0.0`
 
 ---
@@ -17,10 +17,10 @@ Atelier UI is a **React + TypeScript UI framework** with pure CSS design tokens.
 
 ```tsx
 // 1. CSS first (before any component)
-import 'atelier-ui/styles/globals.css';
+import 'atelier-ui-react/styles/globals.css';
 
 // 2. Components
-import { ThemeProvider, Button, Card, Stack } from 'atelier-ui';
+import { ThemeProvider, Button, Card, Stack } from 'atelier-ui-react';
 ```
 
 ```tsx
@@ -303,7 +303,7 @@ Primary layout primitive. Manages spacing between children.
 ### useTheme
 
 ```tsx
-import { useTheme } from 'atelier-ui';
+import { useTheme } from 'atelier-ui-react';
 
 function ThemeToggle() {
   const { resolvedTheme, toggleTheme } = useTheme();

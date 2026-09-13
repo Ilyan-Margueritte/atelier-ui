@@ -19,8 +19,8 @@ npm install   # ou utilisez le dossier directement
 
 ```tsx
 import React from 'react';
-import 'atelier-ui/styles/globals.css';
-import { ThemeProvider } from 'atelier-ui';
+import 'atelier-ui-react/styles/globals.css';
+import { ThemeProvider } from 'atelier-ui-react';
 
 function App() {
   return (
@@ -61,8 +61,8 @@ import {
   Button,
   ThemeProvider,
   useTheme,
-} from 'atelier-ui';
-import 'atelier-ui/styles/globals.css';
+} from 'atelier-ui-react';
+import 'atelier-ui-react/styles/globals.css';
 ```
 
 ### Étape 2 : Structurer avec Stack (disposition)
@@ -211,7 +211,7 @@ Toutes les valeurs sont des variables CSS — pas de valeurs en dur dans les com
 
 ### Surcharge des tokens CSS
 
-Dans votre fichier global.css (avant d'importer atelier-ui) :
+Dans votre fichier global.css (avant d'importer atelier-ui-react) :
 
 ```css
 :root {
@@ -219,13 +219,13 @@ Dans votre fichier global.css (avant d'importer atelier-ui) :
   --ui-space-lg: 3rem;              /* Votre espacement */
   --ui-radius-md: 16px;             /* Votre rayon */
 }
-@import 'atelier-ui/styles/globals.css';
+@import 'atelier-ui-react/styles/globals.css';
 ```
 
 ### Thème dynamique
 
 ```tsx
-import { useTheme, ThemeProvider } from 'atelier-ui';
+import { useTheme, ThemeProvider } from 'atelier-ui-react';
 
 function App() {
   const { resolvedTheme, toggleTheme } = useTheme();
@@ -248,14 +248,14 @@ Le framework assure automatiquement :
 - **Messages d'erreur** : Liés au champ via `aria-describedby`
 - **État invalid** : `aria-invalid={true}` sur champs erreurs
 - **Focus visible** : `:focus-visible` avec `--ui-color-accent`
-- **Contraste WCAG AA** : Dans les modes clair/sombre
+- **Contraste WCAG AA** dans les modes clair/sombre
 - **Navigation clavier** : Tous les éléments interactifs ont focus
 
 ## 5. Dépannage
 
 ### Problème : Les styles ne s'appliquent pas
 
-**Solution :** Vérifiez d'avoir importé `atelier-ui/styles/globals.css` en **premier** dans votre fichier d'entrée (index.tsx ou App.tsx).
+**Solution :** Vérifiez d'avoir importé `atelier-ui-react/styles/globals.css` en **premier** dans votre fichier d'entrée (index.tsx ou App.tsx).
 
 ### Problème : Le thème ne change pas
 
@@ -289,7 +289,7 @@ Le framework assure automatiquement :
 - `framework/skill.md` — Documentation IA / détails techniques
 - `demo-app/` — Exemples d'utilisation complets
 - `projetcomplet/` — Projet origine (développement local)
-- npm package : `atelier-ui` sur npmjs.com
+- npm package : `atelier-ui-react` sur npmjs.com
 
 ---
 
