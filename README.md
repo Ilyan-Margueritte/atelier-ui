@@ -1,34 +1,25 @@
-# Atelier UI — Source Code
+# Atelier UI
 
-## Description
-Ce dossier contient le code source du framework **Atelier UI**, un framework React + TypeScript minimaliste et accessible construit avec des variables CSS pures (design tokens).
+**Modern, accessible React + TypeScript UI framework built with pure CSS design tokens.**
 
-## Structure du dossier
+> **Un framework UI minimaliste, accessible et beau par défaut.** Aucun framework CSS tiers (pas de Tailwind, pas de Bootstrap). Juste des variables CSS pures et des composants React typés.
 
-```
-src/
-├── components/     ← Composants UI (Card, Button, Input, Select, Checkbox, etc.)
-├── layout/         ← Dispositions (Stack, Flex, Grid, Container)
-├── theme/          ← Système de tokens CSS, ThemeProvider, light/dark modes
-├── styles/         ← Fichiers de style de base (reset.css, globals.css)
-└── utils/          ← Utilitaires (cx(), getSpaceValue())
-```
+## 📦 Installation
 
-## Utilisation du framework
-
-### Installation dans un nouveau projet
 ```bash
 npm install atelier-ui
-# ou depuis le dossier local
-npm install file:./framework
+# ou depuis ce dépôt
+cd .. && npm install
 ```
 
-### Importation de base
+## 🚀 Utilisation de base
+
 ```tsx
 import React from 'react';
+import 'atelier-ui/styles/globals.css';
 import { Card, Button, ThemeProvider } from 'atelier-ui';
 
-function Exemple() {
+function App() {
   return (
     <ThemeProvider defaultTheme="light">
       <Card variant="outlined" padding="md">
@@ -39,56 +30,72 @@ function Exemple() {
 }
 ```
 
-## Personnalisation
+## 📚 Documentation
 
-Les styles sont entièrement basés sur des variables CSS — pas de valeurs en dur :
+- **Guide rapide** : Voir `doc.md`
+- **Documentation IA** : Voir `skill.md`
+- **API complète** : Tous les composants et tokens sont documentés dans ce dépôt
 
-```css
-/* Dans votre projet global.css */
-:root {
-  --ui-color-primary: #ff0000;   /* Votre couleur */
-  --ui-space-lg: 3rem;           /* Votre espacement */
-}
-@import 'atelier-ui/styles/globals.css';
+## 🛠️ Features
+
+- **Design tokens CSS purs** — `--ui-color-*`, `--ui-space-*`, `--ui-radius-*`, `--ui-shadow-*`
+- **Thème clair/sombre** complet avec `ThemeProvider`
+- **15+ composants** prêts à l'emploi : Card, Button, Input, Select, Checkbox, Heading, Text, Stack, Flex, Grid, Container, Link, Divider, Icon, etc.
+- **Accessibilité WCAG AA** garantie dans les deux modes
+- **Aucune dépendance CSS tierce** — zéro compromis sur les performances
+- **API déclarative** claire et prévisible
+- **Support V1** : L'assemblage standard produit une interface sobre sans CSS custom
+
+## 🏗️ Structure du dépôt
+
+```
+framework/     
+├── package.json
+├── tsconfig.json
+├── skill.md        ← Documentation IA / détails techniques
+├── doc.md          ← Documentation utilisateur détaillée
+├── README.md       ← Présentation du framework
+└── src/            ← Tout le code source
+    ├── components/ ← Card, Button, Input, Select, Checkbox, etc.
+    ├── layout/     ← Stack, Flex, Grid, Container
+    ├── theme/      ← Tokens CSS, ThemeProvider, light/dark
+    ├── styles/     ← globals.css, reset.css
+    └── utils/      ← cx(), getSpaceValue()
+
+## 🛠️ Installation
+
+```bash
+# Via npm (package publié)
+npm install atelier-ui
+
+# En développement local ce dépôt
+cd ..
+git clone https://github.com/Ilyan-Margueritte/atelier-ui.git
+
+cd atelier-ui
+
+npm install
 ```
 
-## Personnalisation dynamique (sans recompilation)
+## 📄 Licence
 
-Modifiez les variables CSS dans votre propre fichier CSS — les changements sont visibles instantanément :
+MIT — Construit avec des variables CSS pures, pas de dépendances CSS tierces.
 
-```css
-.my-app {
-  --ui-color-primary: #eab308;
-  --ui-radius-md: 14px;
-  --ui-space-lg: 2rem;
-}
-```
+---
 
-## Composants disponibles
+**⚡ Atelier UI — Beau par défaut, construit avec des tokens CSS purs.**
 
-- **Foundation** : Text, Heading, Divider
-- **Layout** : Stack, Flex, Grid, Container  
-- **Actions** : Button (5 variants, 3 sizes)
-- **Forms** : Input, Select, Checkbox
-- **Conteneurs** : Card (3 variants)
+---
 
-## Développement
+## 🔧 Développement
 
-Pour modifier le framework :
 ```bash
 # Compiler les types
 npm run lint    # tsc --noEmit
 
 # Build du package
 npm run build:ui
+
+# Lancer les tests
+npm test
 ```
-
-## Publication npm
-
-```bash
-npm version patch    # 1.0.0 → 1.0.1
-npm publish          # Publier sur npmjs.com
-```
-
-## Licence
-MIT - Construit avec des variables CSS pures, pas de dépendances CSS tierces.

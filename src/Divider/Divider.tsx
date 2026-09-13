@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { DividerProps } from './Divider.types';
-import { cx, getSpaceValue } from '../../utils';
+import { cx, getSpaceValue } from '../utils';
 import './Divider.css';
 
 export const Divider = forwardRef<HTMLDivElement, DividerProps>(function Divider(

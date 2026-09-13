@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { HeadingProps, HeadingSize } from './Heading.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Heading.css';
 
 const defaultLevelSizeMap: Record<number, HeadingSize> = {

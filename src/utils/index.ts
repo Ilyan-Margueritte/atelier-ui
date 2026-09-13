@@ -2,7 +2,7 @@
  * Atelier UI — Internal Utilities
  */
 
-export type ClassValue = string | number | boolean | undefined | null | { [key: string]: any } | ClassValue[];
+export type ClassValue = string | number | bigint | boolean | undefined | null | { [key: string]: any } | ClassValue[];
 
 /**
  * Lightweight classNames / cx utility with zero dependencies

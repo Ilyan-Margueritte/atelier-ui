@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { IconProps, IconSize } from './Icon.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Icon.css';
 
 const sizeMap: Record<string, number> = {

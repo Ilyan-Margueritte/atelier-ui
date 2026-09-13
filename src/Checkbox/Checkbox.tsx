@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useRef } from 'react';
 import type { CheckboxProps } from './Checkbox.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Checkbox.css';
 
 export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Checkbox(

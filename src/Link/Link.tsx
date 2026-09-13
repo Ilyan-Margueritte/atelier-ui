@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { LinkProps } from './Link.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Link.css';
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(

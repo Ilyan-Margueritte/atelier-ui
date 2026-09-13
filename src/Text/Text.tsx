@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { TextProps } from './Text.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Text.css';
 
 export const Text = forwardRef<HTMLElement, TextProps>(function Text(

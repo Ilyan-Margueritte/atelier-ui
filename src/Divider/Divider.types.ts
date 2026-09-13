@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SpaceToken } from '../../utils';
+import type { SpaceToken } from '../utils';
 
 export type DividerOrientation = 'horizontal' | 'vertical';
 

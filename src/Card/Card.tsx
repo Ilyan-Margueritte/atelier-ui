@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import type { CardProps, CardHeaderProps, CardBodyProps, CardFooterProps } from './Card.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Card.css';
 
 const CardBase = forwardRef<HTMLDivElement, CardProps>(function Card(

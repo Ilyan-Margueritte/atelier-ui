@@ -1,6 +1,6 @@
 import React, { forwardRef, useId } from 'react';
 import type { InputProps } from './Input.types';
-import { cx } from '../../utils';
+import { cx } from '../utils';
 import './Input.css';
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
