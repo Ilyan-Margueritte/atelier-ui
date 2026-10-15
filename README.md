@@ -14,7 +14,7 @@ npm install atelier-ui-react
 
 ```tsx
 import React from 'react';
-import 'atelier-ui-react/styles/globals.css';
+import 'atelier-ui-react/styles.css';
 import { Card, Button, ThemeProvider } from 'atelier-ui-react';
 
 function App() {

@@ -17,7 +17,7 @@ Atelier UI is a **React + TypeScript UI framework** with pure CSS design tokens.
 
 ```tsx
 // 1. CSS first (before any component)
-import 'atelier-ui-react/styles/globals.css';
+import 'atelier-ui-react/styles.css';
 
 // 2. Components
 import { ThemeProvider, Button, Card, Stack } from 'atelier-ui-react';

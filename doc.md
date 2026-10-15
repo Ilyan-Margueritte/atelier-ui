@@ -19,7 +19,7 @@ npm install   # ou utilisez le dossier directement
 
 ```tsx
 import React from 'react';
-import 'atelier-ui-react/styles/globals.css';
+import 'atelier-ui-react/styles.css';
 import { ThemeProvider } from 'atelier-ui-react';
 
 function App() {
@@ -62,7 +62,7 @@ import {
   ThemeProvider,
   useTheme,
 } from 'atelier-ui-react';
-import 'atelier-ui-react/styles/globals.css';
+import 'atelier-ui-react/styles.css';
 ```
 
 ### Étape 2 : Structurer avec Stack (disposition)
@@ -219,7 +219,7 @@ Dans votre fichier global.css (avant d'importer atelier-ui-react) :
   --ui-space-lg: 3rem;              /* Votre espacement */
   --ui-radius-md: 16px;             /* Votre rayon */
 }
-@import 'atelier-ui-react/styles/globals.css';
+@import 'atelier-ui-react/styles.css';
 ```
 
 ### Thème dynamique
@@ -255,7 +255,7 @@ Le framework assure automatiquement :
 
 ### Problème : Les styles ne s'appliquent pas
 
-**Solution :** Vérifiez d'avoir importé `atelier-ui-react/styles/globals.css` en **premier** dans votre fichier d'entrée (index.tsx ou App.tsx).
+**Solution :** Vérifiez d'avoir importé `atelier-ui-react/styles.css` en **premier** dans votre fichier d'entrée (index.tsx ou App.tsx).
 
 ### Problème : Le thème ne change pas
 
